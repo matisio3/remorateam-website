@@ -1,0 +1,169 @@
+/* Reset ogólny */
+body {
+  background-color: darkslategray;
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* Nawigacja */
+.nav {
+  background-color: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(8px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+  padding: 15px 30px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.nav-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.nav-logo img {
+  vertical-align: middle;
+}
+
+.nav-links {
+  display: flex;
+  gap: 30px;
+}
+
+.nav-link {
+  font-size: 18px;
+  font-weight: 600;
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #00ffff;
+  transform: translateY(-2px);
+}
+
+/* Banner */
+#banner {
+  background-image: url('img/ocean.jpg');
+  background-size: cover;
+  height: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner-content {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  flex-direction: row;
+}
+
+.banner-text h1,
+.banner-text h2 {
+  color: white;
+  text-shadow: 4px 4px 40px rgba(0, 0, 0, 1);
+  margin: 0;
+  padding: 0;
+}
+
+.banner-text h1 {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.banner-text h2 {
+  font-size: 30px;
+  font-weight: 400;
+  margin-top: 10px;
+}
+
+/* Projekty */
+#projekty {
+  color: white;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 40px;
+  margin-top: 40px;
+  padding: 0 20px;
+}
+
+.project img {
+  width: 100%;
+  max-width: 128px;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.project img:hover {
+  transform: scale(1.05);
+}
+
+.project p {
+  margin-top: 10px;
+  font-size: 14px;
+  max-width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.5;
+}
+
+/* Aktualności */
+#aktualnosci {
+  color: white;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+iframe {
+  border: none;
+  border-radius: 10px;
+  max-width: 100%;
+}
+
+/* Nagłówki */
+h1 {
+  font-size: 36px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+/* Separator */
+hr.new5 {
+  border: 2px solid rgb(53, 53, 53);
+  width: 80%;
+  margin: 40px auto;
+}
+
+/* Stopka */
+#footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  margin-top: 50px;
+}
+
+h1::after {
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 3px;
+  background-color: #00ffff;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -10px;
+}
