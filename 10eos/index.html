@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Koniec wsparcia dla Windows 10 - Co dalej?</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Lato', sans-serif;
+            background-color: #f6f6f6;
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(to right, #3a65ef, #062ca7);
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        header h1 {
+            font-size: 36px;
+            margin: 0;
+        }
+
+        header p {
+            font-size: 28px;
+            margin-top: 20px;
+        }
+
+        section {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        h2 {
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+
+        .highlight {
+            background-color: rgb(233, 62, 62);
+            padding: 15px;
+            color: white;
+            text-align: center;
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+
+        ul, ol {
+            font-size: 18px;
+            line-height: 1.8;
+            padding-left: 20px;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background-color: #0078d7;
+            color: white;
+            padding: 12px 20px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 15px 10px 0 0;
+            transition: background-color 0.3s;
+        }
+
+        .cta-button:hover {
+            background-color: #005fa3;
+        }
+
+        table {
+            width: 100%;
+            text-align: center;
+            border-collapse: collapse;
+            margin-top: 30px;
+        }
+
+        thead {
+            background-color: #3a65ef;
+            color: white;
+        }
+
+        th, td {
+            padding: 15px;
+            border: 1px solid #ddd;
+        }
+
+        @media(max-width: 768px) {
+            header h1 { font-size: 28px; }
+            header p { font-size: 20px; }
+            h2 { font-size: 24px; }
+            table td img { width: 40px; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Wsparcie dla Windows 10 kończy się za:</h1>
+    <p id="timer">Ładowanie...</p>
+</header>
+
+<section>
+    <div class="highlight">
+        Microsoft zakończy wsparcie techniczne dla systemu Windows 10 w dniu <strong>14 października 2025 roku</strong>.
+    </div>
+    <div class="highlight">
+        Trwa obecnie głosowanie czy ogarnąć osobną domene na ten projekt. <a style="color:white" href="https://docs.google.com/forms/d/e/1FAIpQLScFsE6XnIe-BheiuukKefyALUy4nP3LqJHv7qmqsEWAqxtutQ/viewform?usp=header">Zagłosuj tutaj.</a>
+    </div>
+
+    <h2>Co to oznacza?</h2>
+    <ol>
+        <li>Brak aktualizacji zabezpieczeń po tej dacie</li>
+        <li>Brak wsparcia technicznego od Microsoftu</li>
+        <li>Możliwy brak wsparcia dla aplikacji zewnętrznych (np. Google Chrome)</li>
+    </ol>
+
+    <h2>Co możesz zrobić?</h2>
+    <ol>
+        <li><a href="#windows11">Aktualizacja do Windowsa 11</a></li>
+        <li><a href="#ltsc">Przejście na Windows 10 LTSC</a></li>
+        <li><a href="#linux">Przeniesienie się na Linuxa</a></li>
+    </ol>
+</section>
+
+<section id="windows11">
+    <h2>1️⃣ Aktualizacja do Windowsa 11</h2>
+    <p>Windows 11 to najnowszy system Microsoftu, zaprojektowany z myślą o nowoczesności, estetyce i wydajności.</p>
+    <ul>
+        <li><strong>Nowy komputer?</strong> Windows 11 działa szybciej i płynniej na nowym sprzęcie.</li>
+        <li><strong>Używasz laptopa?</strong> Lepsze zarządzanie baterią i zasobami.</li>
+        <li><strong>Znudził Cię wygląd Windowsa 10?</strong> Świeży interfejs i centrowane menu Start.</li>
+        <li><strong>Gracz?</strong> Obsługa DirectStorage i Auto HDR.</li>
+    </ul>
+    <a href="https://www.microsoft.com/pl-pl/windows/get-windows-11" class="cta-button"><i class="fas fa-download"></i> Przejdź na Windows 11</a>
+</section>
+
+<section id="ltsc">
+    <h2>2️⃣ Przejście na Windows 10 LTSC</h2>
+    <p>Windows 10 LTSC to wersja systemu skupiona na stabilności, bezpieczeństwie i długoterminowym wsparciu.</p>
+    <ul>
+        <li><strong>Dla firm i produkcji:</strong> brak aktualizacji funkcji, tylko poprawki bezpieczeństwa.</li>
+        <li><strong>Minimalizm:</strong> brak Cortany, Microsoft Store i zbędnych aplikacji.</li>
+        <li><strong>Starszy sprzęt?</strong> LTSC działa sprawnie nawet na starszych komputerach.</li>
+        <li><strong>Długoterminowość:</strong> do 10 lat wsparcia technicznego.</li>
+    </ul>
+    <p>Windows 10 LTSC zawiera wersje próbną tzw. Evaluation</p>
+    <a href="https://www.microsoft.com/en-us/evalcenter/download-windows-10-enterprise" class="cta-button"><i class="fas fa-download"></i>Wersja Evaluation Windows 10 LTSC</a>
+</section>
+
+<section id="linux">
+    <h2>3️⃣ 🐧 Przeniesienie się na Linuxa</h2>
+    <p>Linux to system wolny, elastyczny i w pełni kontrolowany przez użytkownika — idealny dla tych, którzy szukają alternatywy.</p>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Logo</th>
+                <th>Nazwa</th>
+                <th>Dla kogo?</th>
+                <th>Zalety</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><img src="ubuntu.png" width="60"></td>
+                <td><strong>Ubuntu</strong></td>
+                <td>Początkujący</td>
+                <td>Intuicyjny, duża społeczność, stabilność</td>
+            </tr>
+            <tr>
+                <td><img src="cachyos.png" width="60"></td>
+                <td><strong>CachyOS</strong></td>
+                <td>Gracze / Zaawansowani</td>
+                <td>Szybki, zoptymalizowany, oparty na Arch Linux</td>
+            </tr>
+            <tr>
+                <td><img src="linuxmint.png" width="60"></td>
+                <td><strong>Linux Mint</strong></td>
+                <td>Użytkownicy Windowsa</td>
+                <td>Wygląd podobny do Windowsa, lekki i stabilny</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <ul>
+        <li>🆓 Darmowy i open-source — nie płacisz za system ani aplikacje.</li>
+        <li>🛡️ Bezpieczny — mniejsza podatność na wirusy, pełna prywatność.</li>
+        <li>⚙️ Możliwość personalizacji — od wyglądu po zachowanie systemu.</li>
+        <li>💻 Działa na starszym sprzęcie — świetna alternatywa dla słabszych komputerów.</li>
+        <li>🧑‍💻 Idealny dla programistów — terminal, narzędzia, serwery w zasięgu ręki.</li>
+    </ul>
+
+    <a href="https://ubuntu.com/download/desktop" class="cta-button"><i class="fab fa-linux"></i> Pobierz Ubuntu</a>
+    <a href="https://cachyos.org/" class="cta-button"><i class="fas fa-gamepad"></i> Sprawdź CachyOS</a>
+<a href="https://linuxmint.com/download.php" class="cta-button"><i class="fas fa-desktop"></i> Pobierz Linux Mint</a>
+</section>
+
+<section id="other">
+    <h2>❔ Czy ta strona jest robiona przez Microsoft?</h2>
+    <p><strong>Nie.</strong> Strona została przygotowana przez <a href="https://remorateam.is-a.dev/">RemoraTeam</a>. Nie jesteśmy powiązani z Microsoftem.</p>
+
+    <h2>💡 Znalazłeś błąd lub chcesz coś zasugerować?</h2>
+    <p>Wyślij nam wiadomość e-mail na adres: <a href="mailto:itsmatisio@outlook.fr">itsmatisio@outlook.fr</a> — chętnie przeczytamy Twoje pomysły!</p>
+    <p><strong>Nie chcesz napisać maila?</strong> Możesz również napisać post na X oznaczając mnie (@itsmatisio) lub na <a href="https://dc.gg/matisio">discordzie RemoraTeam</p>
+</section>
+
+<script>
+const timerElement = document.getElementById("timer");
+const countDownDate = new Date("Oct 14, 2025 00:00:00");
+
+function getTimeRemaining(endTime) {
+    const now = new Date();
+    let total = endTime - now;
+
+    if (total < 0) return "Wsparcie już się zakończyło!";
+
+    const seconds = Math.floor((total / 1000) % 60);
+    const minutes = Math.floor((total / (1000 * 60)) % 60);
+    const hours = Math.floor((total / (1000 * 60 * 60)) % 24);
+    const days = Math.floor(total / (1000 * 60 * 60 * 24));
+
+    // Przybliżenie liczby miesięcy i lat
+    const months = Math.floor(days / 30.44); // średnia długość miesiąca
+    const years = Math.floor(months / 12);
+    const remainingMonths = months % 12;
+    const remainingDays = Math.floor(days - (months * 30.44));
+
+    let output = "";
+
+    if (years > 0) output += `${years} ${years === 1 ? "rok" : "lata"} `;
+    if (remainingMonths > 0) output += `${remainingMonths} ${remainingMonths === 1 ? "miesiąc" : "miesiące"} `;
+    if (remainingDays > 0) output += `${remainingDays} ${remainingDays === 1 ? "dzień" : "dni"} `;
+
+    output += `${hours}h ${minutes}m ${seconds}s`;
+
+    return output;
+}
+
+function updateCountdown() {
+    timerElement.innerHTML = getTimeRemaining(countDownDate);
+}
+
+// Aktualizacja co sekundę
+setInterval(updateCountdown, 1000);
+</script>
+
+
+</body>
+</html>
+
