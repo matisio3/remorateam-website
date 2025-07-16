@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <title>Web Based Apps</title>
+  <link rel="stylesheet" href="https://unpkg.com/98.css">
+  <style>
+    body {
+      background-color: teal;
+      padding: 20px;
+      font-family: sans-serif;
+    }
+
+    .marquee-container {
+      width: 100%;
+      overflow: hidden;
+      position: relative;
+      background: navy;
+      border: 2px inset white;
+      padding: 5px 0;
+      height: 40px;
+      margin-bottom: 20px;
+    }
+
+    .marquee-text {
+      display: inline-block;
+      white-space: nowrap;
+      padding-left: 100%;
+      animation: scroll-left 10s linear infinite;
+      font-weight: bold;
+      font-size: 20px;
+      color: yellow;
+    }
+
+    @keyframes scroll-left {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-100%); }
+    }
+
+    .app-window {
+      width: 400px;
+      margin: 30px auto;
+    }
+
+    .taskbar {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: silver;
+      padding: 4px 8px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-top: 2px solid white;
+      border-left: 2px solid white;
+      border-right: 2px solid gray;
+      border-bottom: 2px solid gray;
+      font-family: 'Tahoma', sans-serif;
+      font-size: 14px;
+      z-index: 1000;
+    }
+
+    .start-button {
+      background: none;
+      border: none;
+      padding: 0;
+      margin: 0;
+      outline: none;
+      height: 28px;
+    }
+
+    .start-button img {
+      height: 28px;
+      width: auto;
+      display: block;
+      border: 2px outset white;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 50px;
+      color: white;
+    }
+
+    .gif {
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Retro Marquee -->
+  <div class="marquee-container">
+    <div class="marquee-text">
+      🌐 Witaj na stronie Web Based Apps! 🌐
+    </div>
+  </div>
+
+  <!-- Okno aplikacji Photopea -->
+  <div class="window app-window">
+    <div class="title-bar">
+      <div class="title-bar-text">Photopea Desktop</div>
+      <div class="title-bar-controls">
+        <button aria-label="Minimize"></button>
+        <button aria-label="Maximize"></button>
+        <button aria-label="Close"></button>
+      </div>
+    </div>
+    <div class="window-body">
+      <p>Photopea jako aplikacja (wymaga internetu).</p>
+      <a href="https://github.com/RemoraTeam/Photopea-Desktop/releases/tag/2.0" target="_blank">
+        <button>🖼️ Pobierz Photopea</button>
+      </a>
+    </div>
+  </div>
+
+  <!-- Okno informacyjne -->
+  <div class="window app-window">
+    <div class="title-bar">
+      <div class="title-bar-text">Informacja</div>
+      <div class="title-bar-controls">
+        <button aria-label="Close"></button>
+      </div>
+    </div>
+    <div class="window-body">
+      <p>To jest retro-strona inspirowana systemem Windows 98.</p>
+      <p>Wkrótce dodamy więcej aplikacji...</p>
+    </div>
+  </div>
+
+  <!-- Taskbar -->
+  <div class="taskbar">
+    <div>
+      <button class="start-button">
+        <img src="win.jpg" alt="Start">
+      </button>
+    </div>
+    <div id="clock">00:00</div>
+  </div>
+
+  <!-- Stopka -->
+  <footer>
+    <p>Made by <a style="color:white;" href="/">RemoraTeam</a></p>
+  </footer>
+
+  <!-- Zegar -->
+  <script>
+    function updateClock() {
+      const now = new Date();
+      let h = now.getHours();
+      let m = now.getMinutes();
+      if (h < 10) h = "0" + h;
+      if (m < 10) m = "0" + m;
+      document.getElementById("clock").textContent = `${h}:${m}`;
+    }
+
+    setInterval(updateClock, 1000);
+    updateClock();
+  </script>
+
+</body>
+</html>
